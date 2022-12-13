@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "Chainsaw Man",
+    "image": "chainsaw-man",
+    "direction": "row",
+    "brief": "Chainsaw Man kể về cậu thiếu niên Denji sống một cuộc sống nghèo khổ và phải làm việc vất vả để trả nợ. Cậu vừa sống vừa làm Thợ Săn Quỷ cùng với Pochita quỷ Cưa, nhưng rồi một ngày cậu trở thành mục tiêu của một con quỷ tàn bạo…"
+  },
+  {
+    "id": "2",
+    "title": "Spy x Family Part 2",
+    "image": "sxf",
+    "direction": "row",
+    "brief": "Vì những lý do riêng, một điệp viên, một sát thủ và một nhà ngoại cảm bắt tay đóng giả làm một gia đình trong khi che giấu danh tính thật của họ với nhau."
+  },
+  {
+    "id": "3",
+    "title": "Đêm lặng",
+    "image": "dark",
+    "direction": "row",
+    "brief": "Đêm Lặng lấy bối cảnh tại một thị trấn nhỏ giữa nước Đức, nơi những hiện tượng siêu nhiên kỳ lạ liên tục diễn ra, và sự biến mất của 2 đứa trẻ trong một gia đình 4 người đã khiến cư dân nơi đây đặt dấu hỏi giữa vụ án này với những sự việc kỳ bí kia."
+  },
+  {
+    "id": "4",
+    "title": "Alice in Boderland",
+    "image": "alice",
+    "direction": "row",
+    "brief": "Alice in Boderland kể về một game thủ lông bông cùng hai người bạn nhận ra họ đã lọt vào thế giới Tokyo song song, nơi họ buộc phải thi đấu trong một loạt trò chơi tàn bạo để tồn tại."
+  },
+  {
+    "id": "5",
+    "title": "Kaguya-sama: Cuộc chiến tỏ tình",
+    "image": "kaguya",
+    "direction": "row",
+    "brief": "Tiếp nối mùa 2, câu chuyện xoay quanh tình yêu giữa Shinomiya Kaguya và Shirogane Miyuki và những người xung quanh. Cuộc đấu trí để ép đối phương tỏ tình giữa hai thiên tài mang tới những giây phút lãng mạng và vài hiểu lầm hài hước."
+  },
+  {
+    "id": "6",
+    "title": "Hãy gọi cho Sơn!",
+    "image": "saul",
+    "direction": "row",
+    "brief": "Hãy gọi cho Sơn bắt đầu từ thời điểm 6 năm trước khi Sơn vẫn chỉ là một anh luật sư công chui rúc trong văn phòng thuê nhỏ tị chỉ đủ xoay người nằm đằng sau một salon móng của các cô người Việt."
+  }
+]

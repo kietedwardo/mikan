@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "image": "https://media.kitsu.io/anime/42765/poster_image/large-5ce19551c1a6cf995b378205b9149b5c.jpeg",
+    "direction": "row"
+  },
+  {
+    "id": "2",
+    "image": "https://media.kitsu.io/anime/44081/poster_image/large-049ba5097e6d6dbb515a0584a7ccd3b2.jpeg",
+    "direction": "row"
+  },
+  {
+    "id": "3",
+    "image": "https://www.geek-germany.de/wp-content/uploads/2022/03/Eighty-Six-800x445.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "4",
+    "image": "https://media.kitsu.io/anime/poster_images/1555/large.jpg",
+    "direction": "row"
+  }
+]

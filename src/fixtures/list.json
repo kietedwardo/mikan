@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "image": "images/onlist/csm.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "2",
+    "image": "images/onlist/sup.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "3",
+    "image": "images/onlist/slime.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "4",
+    "image": "images/onlist/mushoku.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "5",
+    "image": "images/onlist/jojo.jpg",
+    "direction": "row"
+  }
+]

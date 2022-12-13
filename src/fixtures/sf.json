@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "image": "https://occ-0-33-768.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWBteOyyuZo4IVBEFilSIgWnP7-EoBoP_LwxADUxrv0iRC90_lKNwOEDJ5NrHUsp4J0aAJI-jLflGsMGA5-Wy3t1xfx-q5wxtrr1.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "2",
+    "image": "https://i0.wp.com/dmtalkies.com/wp-content/uploads/2021/09/ezgif-3-4e40db0bf128-compressed.jpg?fit=1200%2C674&ssl=1",
+    "direction": "row"
+  },
+  {
+    "id": "3",
+    "image": "https://www.geek-germany.de/wp-content/uploads/2022/03/Eighty-Six-800x445.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "4",
+    "image": "https://i.ytimg.com/vi/P-jus_ny88M/maxresdefault.jpg",
+    "direction": "row"
+  }
+]

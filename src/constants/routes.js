@@ -1,0 +1,11 @@
+export const HOME = "/";
+export const BROWSE = "/browse";
+export const SIGN_UP = "/signup";
+export const SIGN_IN = "/signin";
+export const REGISTRATION = "/registration";
+export const PLAN = "/plan";
+export const PAYMENT = "/payment";
+export const PROFILE = "/profile";
+export const GENRE = "/genre";
+export const ANIME = "/anime";
+export const FORGOT = "/forgot";

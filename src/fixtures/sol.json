@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "image": "https://res.cloudinary.com/pingback/image/upload/q_auto/imgs/user/164268/gallery/y4z1xwbjilzxr06yw2m9",
+    "direction": "row"
+  },
+  {
+    "id": "2",
+    "image": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1afd69e308879a2863e604ca58762d99.jpe",
+    "direction": "row"
+  },
+  {
+    "id": "3",
+    "image": "https://i.ytimg.com/vi/ISujxKyUMgs/maxresdefault.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "4",
+    "image": "https://pic-bstarstatic.akamaized.net/ugc/fd751c82f54aa8a12342ce325d41ab57a69b7c11.png@960w_540h_1e_1c_1f.webp",
+    "direction": "row"
+  }
+]

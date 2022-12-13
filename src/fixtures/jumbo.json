@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Có thể xem trên đa nền tảng.",
+    "subTitle": "TV thông minh, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray và hơn thế nữa.",
+    "image": "/images/misc/home-tv.jpg",
+    "alt": "Watch on Mikan",
+    "direction": "row"
+  },
+  {
+    "id": 2,
+    "title": "Hỗ trợ xem phim ngoại tuyến",
+    "subTitle": "Tải xuống các chương trình bạn yêu thích.",
+    "image": "/images/misc/home-mobile.jpg",
+    "alt": "Watch on mobile",
+    "direction": "row-reverse"
+  },
+  {
+    "id": 3,
+    "title": "Xem mọi lúc, mọi nơi",
+    "subTitle": "Hỗ trợ đồng bộ hoá dữ liệu cá nhân của bạn trên các thiết bị điện tử",
+    "image": "/images/misc/home-imac.jpg",
+    "alt": "Money Heist on Mikan",
+    "direction": "row"
+  }
+]

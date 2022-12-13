@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "image": "https://whatifgaming.com/wp-content/uploads/2022/10/IMG_20221002_150412_1920_x_1080_pixel.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "2",
+    "image": "https://img.hulu.com/user/v3/artwork/d7cdf259-022f-424e-ad36-3173754762f5?base_image_bucket_name=image_manager&base_image=a34d5d97-62ca-4ffa-9611-37db4236ee4a&size=1200x630&format=jpeg",
+    "direction": "row"
+  },
+  {
+    "id": "3",
+    "image": "https://static2.vieon.vn/vieplay-image/carousel_web_v4/2021/05/12/fghoc44b_1920x1080-satthuakame.jpg",
+    "direction": "row"
+  },
+  {
+    "id": "4",
+    "image": "https://wallpaperaccess.com/full/1086689.png",
+    "direction": "row"
+  }
+]
