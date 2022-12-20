@@ -9,3 +9,5 @@ export { default as Profile } from "./profile";
 export { default as Genre } from "./genre";
 export { default as Anime } from "./anime";
 export { default as Forgot } from "./forgot";
+export { default as Player } from "./player";
+export { default as Spyxfamily } from "./spyxfamily";

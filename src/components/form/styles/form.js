@@ -7,13 +7,13 @@ export const Container = styled.div`
   ${tw`
       flex 
       flex-col 
-      w-full 
+      w-full
       m-auto 
       mb-24
       max-w-[450px]
       min-h-[660px]
       pt-16
-      px-20
+      px-8
       pb-10
       bg-[#000000b3]
       rounded-3xl

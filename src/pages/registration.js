@@ -1,7 +1,7 @@
 import React from "react";
 import { Feature, OptForm } from "../components";
 import { BackgroundContainer } from "../containers/background";
-import { FooterContainer } from "../containers/footer";
+import NewFooter from "../containers/newfooter";
 import * as ROUTES from "../constants/routes";
 import { Frame } from "../components/accordion/styles/accordion";
 
@@ -18,7 +18,7 @@ export default function Registration() {
             </OptForm>
           </Feature>
           <div style={{ position: "fixed", bottom: "0", width: "100%" }}>
-            <FooterContainer />
+            <NewFooter />
           </div>
         </Frame>
       </BackgroundContainer>

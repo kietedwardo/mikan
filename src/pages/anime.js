@@ -3,7 +3,7 @@ import { Card, Header } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 import { FirebaseContext } from "../context/firebase";
-import { FooterContainer } from "../containers/footer";
+import NewFooter from "../containers/newfooter";
 import Slider from "react-slick";
 import AnimeData from "../fixtures/anime.json";
 import RomcomData from "../fixtures/romcom.json";
@@ -19,18 +19,6 @@ export default function Anime({ slides }) {
 
   const { firebase } = useContext(FirebaseContext);
   const user = firebase.auth().currentUser || {};
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-    pauseOnHover: true,
-  };
 
   const myListSettings = {
     dots: false,
@@ -162,7 +150,7 @@ export default function Anime({ slides }) {
           ))}
         </Slider>
       </div>
-      <FooterContainer />
+      <NewFooter />
     </>
   );
 }

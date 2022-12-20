@@ -2,8 +2,8 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form } from "../components";
 import { FirebaseContext } from "../context/firebase";
-import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
+import NewFooter from "../containers/newfooter";
 import * as ROUTES from "../constants/routes";
 
 export default function Signup() {
@@ -80,7 +80,7 @@ export default function Signup() {
           </Form.Text>
         </Form>
       </HeaderContainer>
-      <FooterContainer />
+      <NewFooter />
     </>
   );
 }

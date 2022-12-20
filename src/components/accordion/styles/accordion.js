@@ -83,7 +83,7 @@ export const Body = styled.div`
   ${tw`
       text-2xl 
       font-normal 
-      bg-[#EA580C33]
+      bg-[#000000B3]
       whitespace-pre-wrap 
       select-none 
       overflow-hidden

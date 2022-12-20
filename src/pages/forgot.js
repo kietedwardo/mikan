@@ -4,7 +4,7 @@ import { Form, Header } from "../components";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-import { FooterContainer } from "../containers/footer";
+import NewFooter from "../containers/newfooter";
 import { HeaderContainer } from "../containers/sign_in_header";
 import logo from "../logo.svg";
 import * as ROUTES from "../constants/routes";
@@ -51,7 +51,7 @@ export default function Forgot() {
           </Form.Base>
         </Form>
       </HeaderContainer>
-      <FooterContainer />
+      <NewFooter />
     </>
   );
 }

@@ -12,6 +12,8 @@ import {
   Genre,
   Anime,
   Forgot,
+  Player,
+  Spyxfamily,
 } from "./pages";
 import * as ROUTES from "./constants/routes";
 import { IsUserNavigate, ProtectedRoute } from "./helpers/routes.js";
@@ -67,6 +69,22 @@ export function App() {
           element={
             <ProtectedRoute user={user}>
               <Anime />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path={ROUTES.SPY_X_FAMILY}
+          element={
+            <ProtectedRoute user={user}>
+              <Spyxfamily />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path={ROUTES.PLAYER}
+          element={
+            <ProtectedRoute user={user}>
+              <Player />
             </ProtectedRoute>
           }
         />

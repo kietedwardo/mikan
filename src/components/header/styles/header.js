@@ -7,13 +7,27 @@ export const Background = styled.div`
       flex 
       flex-col
   `}
-  background: linear-gradient(to bottom,  #00000000, #0000001a, #00000033, #000000), linear-gradient(to top, #00000000, #0000000D, #0000001a, #0000001a, #0000001a, #00000026, #00000033, #000000), url(${({
-    src,
-  }) =>
-    src
-      ? `../images/misc/${src}.jpg`
-      : "../images/misc/home-bg.jpg"}) top left / cover
-    no-repeat;
+  background: linear-gradient(
+      to bottom,
+      #00000000,
+      #0000001a,
+      #00000033,
+      #000000
+    ),
+    linear-gradient(
+      to top,
+      #00000000,
+      #0000000d,
+      #0000001a,
+      #0000001a,
+      #0000001a,
+      #00000026,
+      #00000033,
+      #000000
+    ),
+    url(${({ src }) =>
+    src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
+      top left / cover no-repeat;
   @media (max-width: 1100px) {
     background: none;
   }
@@ -215,24 +229,26 @@ export const SubTitle = styled.h2`
 `;
 
 export const Logo = styled.img`
-  height: 20px;
-  width: 134px;
+  height: 40px;
+  width: 130px;
   margin-left: 20px;
   margin-right: 20px;
-  @media (min-width: 1449px) {
-    height: 45px;
-    width: 167px;
-  }
 `;
 
 export const Card = styled.img`
   border-radius: 20px;
+  position: relative;
   border: 0;
   width: 100%;
   max-width: 305px;
   cursor: pointer;
-  max-height: 172px;
+  max-height: 174px;
   padding: 0;
+
+  @media (max-width: 600px) {
+    max-width: 200px;
+    max-height: 120px;
+  }
 `;
 
 export const Meta = styled.div`
@@ -280,7 +296,9 @@ export const FeatureText = styled.p`
 export const PlayButton = styled.button`
   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
   /* transition: background-color 0.5s ease; */
-
+  a:link {
+    text-decoration: none;
+  }
   ${tw`
       ml-12
       border-0

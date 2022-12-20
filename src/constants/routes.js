@@ -9,3 +9,5 @@ export const PROFILE = "/profile";
 export const GENRE = "/genre";
 export const ANIME = "/anime";
 export const FORGOT = "/forgot";
+export const PLAYER = "/player";
+export const SPY_X_FAMILY = "/spyxfamily";

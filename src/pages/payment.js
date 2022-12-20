@@ -4,7 +4,7 @@ import { Form } from "../components";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 
-import { FooterContainer } from "../containers/footer";
+import NewFooter from "../containers/newfooter";
 import { HeaderContainer } from "../containers/header";
 
 export default function Payment() {
@@ -25,7 +25,7 @@ export default function Payment() {
     <>
       <HeaderContainer>
         <Form>
-          <Form.Title>Set up your credit or debit card</Form.Title>
+          <Form.Title>Điền thông tin thanh toán của bạn</Form.Title>
           <Cards
             name={userName}
             number={cardNumber}
@@ -80,22 +80,17 @@ export default function Payment() {
               type="submit"
               data-testid="payment"
             >
-              START MEMBERSHIP
+              ĐĂNG KÝ GÓI HỘI VIÊN
             </Form.Submit>
           </Form.Base>
-          <Form.Text>
-            Your payments will be processed internationally. Additional bank
-            fees may apply
-          </Form.Text>
-          <Form.Link to="/plan">Change your plan here</Form.Link>
+          <Form.Link to="/plan">Đổi gói</Form.Link>
           <Form.TextSmall>
-            Mikan will automatically continue your membership and charge the
-            membership fee to your payment method until you cancel. You may
-            cancel at any time to avoid future charges.
+            Mikan sẽ tự động thanh toán khi qua tháng mới một cách tự động và
+            bạn có thể huỷ gói bất kì lúc nào
           </Form.TextSmall>
         </Form>
       </HeaderContainer>
-      <FooterContainer />
+      <NewFooter />
     </>
   );
 }

@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Card, Header, Player, Modal } from "../components";
+import { Card, Header, Player } from "../components";
 import * as ROUTES from "../constants/routes";
-import logo from "../logo.svg";
+import logo from "../logo.png";
+import { useNavigate } from "react-router-dom";
 import { FirebaseContext } from "../context/firebase";
 import { FooterContainer } from "./footer";
 import Slider from "react-slick";
@@ -11,17 +12,16 @@ import TrendData from "../fixtures/trending.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../components/moviemodal/styles/modal.css";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+import { Container } from "@mui/material";
+import NewFooter from "./newfooter";
 
 export default function BrowseContainer({ slides }) {
   const [category, setCategory] = useState("series");
   const [searchTerm, setSearchTerm] = useState("");
   const [slideRows, setSlideRows] = useState([]);
-
-  const [openModal, setOpenModal] = useState(false);
-
   const { firebase } = useContext(FirebaseContext);
   const user = firebase.auth().currentUser || {};
+  const navigate = useNavigate();
 
   useEffect(() => {
     setSlideRows(slides[category]);
@@ -113,43 +113,39 @@ export default function BrowseContainer({ slides }) {
               <Header.Feature>
                 <Header.FeatureCallOut>{item.title}</Header.FeatureCallOut>
                 <Header.SubTitle>{item.brief}</Header.SubTitle>
-                <Header.PlayButton onClick={() => setOpenModal(true)}>
-                  Play
+                <Header.PlayButton onClick={() => navigate("/spyxfamily")}>
+                  Xem
                 </Header.PlayButton>
-                <Modal open={openModal} onClose={() => setOpenModal(false)} />
               </Header.Feature>
             </Header>
           ))}
         </Slider>
       </div>
-      <div style={{ marginTop: "30px" }}>
+      <Container maxWidth="1980px" marginTop="30px">
         <Card.Title>Đang xem</Card.Title>
         <Slider {...myListSettings}>
           {ListData.map((item) => (
-            <Header.Meta>
-              <Header.Card
-                src={item.image}
-                key={item.id}
-                direction={item.direction}
-              />
-            </Header.Meta>
+            <Header.Card
+              src={item.image}
+              key={item.id}
+              direction={item.direction}
+            />
           ))}
         </Slider>
-      </div>
-      <div style={{ marginTop: "30px" }}>
+      </Container>
+      <Container maxWidth="1980px" marginTop="30px">
         <Card.Title>Đang hot</Card.Title>
         <Slider {...myListSettings}>
           {TrendData.map((item) => (
-            <Header.Meta>
-              <Header.Card
-                src={item.image}
-                key={item.id}
-                direction={item.direction}
-              />
-            </Header.Meta>
+            <Header.Card
+              src={item.image}
+              key={item.id}
+              direction={item.direction}
+            />
           ))}
         </Slider>
-      </div>
+      </Container>
+
       <Card.Group>
         {slideRows.map((slideItem) => (
           <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
@@ -157,27 +153,22 @@ export default function BrowseContainer({ slides }) {
             <Slider {...myListSettings}>
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
-                  <Card.Image
+                  <Header.Card
                     src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`}
                   />
-                  <Card.Meta>
-                    <Card.SubTitle>{item.title}</Card.SubTitle>
-                    <Card.Text>{item.description}</Card.Text>
-                  </Card.Meta>
                 </Card.Item>
               ))}
             </Slider>
             <Card.Feature category={category}>
               <Player>
-                <Player.Button />
+                <Header.PlayButton></Header.PlayButton>
                 <Player.Video category={category} />
               </Player>
             </Card.Feature>
           </Card>
         ))}
       </Card.Group>
-      <MessengerCustomerChat pageId="100088271727355" appId="833396117726562" />
-      <FooterContainer />
+      <NewFooter />
     </>
   );
 }

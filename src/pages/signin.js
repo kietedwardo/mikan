@@ -2,8 +2,8 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form, Header } from "../components";
 import { FirebaseContext } from "../context/firebase";
-import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/sign_in_header";
+import NewFooter from "../containers/newfooter";
 import {
   GoogleAuthProvider,
   signInWithPopup,
@@ -92,7 +92,7 @@ export default function Signin() {
           </div>
         </Form>
       </HeaderContainer>
-      <FooterContainer />
+      <NewFooter />
     </>
   );
 }

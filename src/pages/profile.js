@@ -1,11 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Form, Header, Profiles } from "../components";
 import { HeaderContainer } from "../containers/sign_in_header";
-import { FooterContainer } from "../containers/footer";
+import NewFooter from "../containers/newfooter";
 import * as ROUTES from "../constants/routes";
 import { FirebaseContext } from "../context/firebase";
 import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 
 export default function Profile() {
   const { firebase } = useContext(FirebaseContext);
@@ -16,10 +16,14 @@ export default function Profile() {
       <HeaderContainer>
         <Form>
           <Profiles.Image src="/images/users/3.png" />
-          <Header.Frame>
-            <Header.SubTitle>Email:</Header.SubTitle>
-            <Header.SubTitle>{user.email}</Header.SubTitle>
-          </Header.Frame>
+          <Grid container spacing={2}>
+            <Grid item xs={6} md={4}>
+              <Header.SubTitle>Email:</Header.SubTitle>
+            </Grid>
+            <Grid item xs={6} md={8}>
+              <Header.SubTitle>{user.email}</Header.SubTitle>
+            </Grid>
+          </Grid>
           <Header.Frame>
             <Header.SubTitle>Premium</Header.SubTitle>
             <Button component={Link} variant="contained" to={ROUTES.PLAN}>
@@ -60,7 +64,7 @@ export default function Profile() {
           </div>
         </Form>
       </HeaderContainer>
-      <FooterContainer />
+      <NewFooter />
     </>
   );
 }
